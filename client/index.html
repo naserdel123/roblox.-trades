@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تريدات روبلوكس</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="auth">
+  <h1>تريدات روبلوكس</h1>
+
+  <input id="user" placeholder="اسم المستخدم">
+  <input id="pass" type="password" placeholder="كلمة المرور">
+  <input type="file" id="avatar">
+
+  <button onclick="register()">تسجيل</button>
+  <button onclick="login()">دخول</button>
+</div>
+
+<div id="app" class="hidden">
+  <button class="add" onclick="openForm()">＋</button>
+
+  <div id="form" class="hidden">
+    <input id="name" placeholder="اسم العنصر">
+    <input id="price" placeholder="المقابل">
+    <input type="file" id="itemImg">
+    <input type="file" id="wantImg">
+    <input id="tiktok" placeholder="رابط تيك توك">
+    <button onclick="postTrade()">نشر</button>
+  </div>
+
+  <div id="trades"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
